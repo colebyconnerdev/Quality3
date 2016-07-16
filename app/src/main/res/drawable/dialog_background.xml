@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <solid android:color="@color/aieWhite" />
+    <stroke
+        android:width="@dimen/dialog_stroke"
+        android:color="@color/aieBlue" />
+    <corners android:radius="@dimen/dialog_corner" />
+    <padding
+        android:bottom="@dimen/dialog_padding"
+        android:left="@dimen/dialog_padding"
+        android:right="@dimen/dialog_padding"
+        android:top="@dimen/dialog_padding" />
+
+</shape>

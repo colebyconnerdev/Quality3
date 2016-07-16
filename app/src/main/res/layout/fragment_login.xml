@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ccdev.quality.StartActivity">
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/aieBlue"
+        android:layout_marginBottom="64dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/login_username"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_login"
+        app:layout_constraintRight_toRightOf="@+id/fragment_login"
+        app:layout_constraintTop_toTopOf="@+id/fragment_login"
+        />
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E8E8E8"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/login_password"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_login"
+        app:layout_constraintRight_toRightOf="@+id/fragment_login" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="16dp"
+        android:background="#E8E8E8"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/login_rememberMe"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_login"
+        app:layout_constraintRight_toRightOf="@+id/fragment_login" />
+
+    <CheckBox
+        android:id="@+id/login_rememberMe"
+        android:layout_marginLeft="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Remember Me"
+        app:layout_constraintBottom_toTopOf="@+id/login_buttons"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_login" />
+
+    <LinearLayout
+        android:id="@+id/login_buttons"
+        android:layout_width="0dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_login"
+        app:layout_constraintLeft_toLeftOf="@+id/fragment_login"
+        app:layout_constraintRight_toRightOf="@+id/fragment_login">
+
+
+        <Button
+            android:id="@+id/login_settings"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Settings" />
+
+        <Button
+            android:id="@+id/login_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Login" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
